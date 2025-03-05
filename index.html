@@ -7,13 +7,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>heykitsune</title>
     <style>
-        /body { background-color: lightblue; }
+	
+	html, body {
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		background-image: url('scarry01.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position; center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.text-column {
+		width: 300px;
+		background-color: #181818;
+		padding: 20px;
+		border-radius: 10px;
+		text-align: center;
+		font-family: verdana;
+		color: #FFFFFF;
+	}
+	h1 {
+		text-align: center;
+		font-family: verdana;
+		color: white
+	}
+
     </style>
 </head>
 
 
-<body style="background-color:powderblue;">
-    <h1 style="font-family:verdana;":> Hello, World! </h1>
+<body>
+	<div class="text-column">
+		<h1> Hello, World! </h1>
+		<p>This is my text column. The quick brown fox jumped over the lazy cow. </p>
+	</div>
 </body>
 
 </html>
