@@ -23,14 +23,37 @@
 		align-items: center;
 	}
 	.text-column {
-		width: 500px;
-		background-color: rgba(24, 24, 24, 0.8);
-		padding: 20px;
-		border-radius: 10px;
-		text-align: center;
-		font-family: verdana;
-		color: #FFFFFF;
+    width: 500px;                /* Your fixed width */
+    background-color: rgba(24, 24, 24, 0.8); /* Your dark semi-transparent background */
+    padding: 20px;               /* Shared padding value */
+    border-radius: 10px;         /* Your rounded corners */
+    text-align: center;          /* Your centered text */
+    font-family: verdana;        /* Your font */
+    color: #FFFFFF;              /* Your white text color */
+    max-width: 600px;            /* My optional max-width for flexibility */
 	}
+
+h1 {
+    margin-bottom: 30px;         /* My spacing below main heading */
+}
+
+h2 {
+    margin-top: 40px;            /* My spacing above subheadings */
+    margin-bottom: 20px;         /* My spacing below subheadings */
+}
+
+.link-item {
+    margin-bottom: 15px;         /* My spacing between links */
+}
+
+.link-item a {
+    text-decoration: none;       /* My link styling: no underline by default */
+    color: #1a0dab;              /* My blue link color */
+}
+
+.link-item a:hover {
+    text-decoration: underline;  /* My underline on hover */
+}
 	h1 {
 		text-align: center;
 		font-family: verdana;
@@ -43,15 +66,19 @@
 
 <body>
 	<div class="text-column">
-		<h1> Best Sites on the Web! </h1>
-		<br>
-		<h2> Reading</h2>
-		<a href="https://www.theverge.com/">The Verge</a>
-		<br>
-		<h2>Tools</h2>
-		<a href="https://fmhy.xyz/">freemediaheckyah</a>
+		<h1>Best Sites on the Web!</h1>
 		
-
+		<h2>News</h2>
+		<div class="link-item"><a href="https://ground.news/">Ground News</a></div>
+		<div class="link-item"><a href="https://www.nytimes.com/">New York Times</a></div>
+		<div class="link-item"><a href="https://www.bbc.com/">BBC</a></div>
+		<div class="link-item"><a href="https://www.theverge.com/">The Verge</a></div>
+		
+		<h2>Tools</h2>
+		<div class="link-item"><a href="https://xai.ai/">Grok</a></div>
+		<div class="link-item"><a href="https://fmhy.xyz/">freemediaheckyah</a></div>
+		<div class="link-item"><a href="https://monkeytype.com/">Monkeytype</a></div>
+		<div class="link-item"><a href="https://cobalt.tools/">Cobalt</a></div>
 	</div>
 </body>
 
